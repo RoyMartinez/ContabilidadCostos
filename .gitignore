@@ -55,3 +55,25 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+
+
+# Visual Studio
+.vs/
+**/.vs/
+
+# Build outputs
+bin/
+obj/
+**/bin/
+**/obj/
+
+# User-specific files
+*.user
+*.suo
+*.rsuser
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
