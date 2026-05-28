@@ -1,5 +1,10 @@
 ﻿using Microsoft.Data.SqlClient;
 
+string connectionString =
+    "Data Source=host.docker.internal,1433;Initial Catalog=testing;User ID=sa;Password=TuPassword123*;Encrypt=True;TrustServerCertificate=True;";
 
+using SqlConnection cnn = new SqlConnection(connectionString);
 
-SqlConnection cnn = new SqlConnection("Data Source=127.0.0.1,1433;Initial Catalog=testing;ID=sa;Password=TuPassword123*");
+cnn.Open();
+
+Console.WriteLine("Conexión abierta correctamente.");
